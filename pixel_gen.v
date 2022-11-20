@@ -37,23 +37,20 @@ output reg [3:0] blue = 0
 );
 always @(posedge clk_d) begin
 
- red <= video_on ? ((pixel_x<=210 & pixel_x>=10 & pixel_y >=10 & pixel_y <=235) ||
-(pixel_x<=420 & pixel_x>=220 & pixel_y >=10 & pixel_y <=225)|| (pixel_x<=630 & pixel_x>=430 &
-pixel_y >=10 & pixel_y <=235) || (pixel_x<=210 & pixel_x>=10 & pixel_y >=245 & pixel_y <=470) ||
- (pixel_x<=420 & pixel_x>=220 & pixel_y >=245 & pixel_y <=470) || (pixel_x<=430 &
-pixel_x>=630 & pixel_y >=245 & pixel_y <=470)? 4'h0:4'hF):(4'h0);
+ red <= video_on ? ((pixel_x<=165 & pixel_x>=55 & pixel_y >=90 & pixel_y <=390) ||
+(pixel_x<=305 & pixel_x>=195 & pixel_y >=90 & pixel_y <=390)|| (pixel_x<=445 & pixel_x>=335 &
+pixel_y >=90 & pixel_y <=390) || 
+(pixel_x<=585 & pixel_x>=475 & pixel_y >=90 & pixel_y <=390)? 4'h0:4'hF):(4'h0);
 
- green <= video_on ? ((pixel_x<=210 & pixel_x>=10 & pixel_y >=10 & pixel_y <=235) ||
-(pixel_x<=420 & pixel_x>=220 & pixel_y >=10 & pixel_y <=225)|| (pixel_x<=630 & pixel_x>=430 &
-pixel_y >=10 & pixel_y <=235) || (pixel_x<=210 & pixel_x>=10 & pixel_y >=245 & pixel_y <=470) ||
- (pixel_x<=420 & pixel_x>=220 & pixel_y >=245 & pixel_y <=470) || (pixel_x<=430 &
-pixel_x>=630 & pixel_y >=245 & pixel_y <=470)? 4'h0:4'hF):(4'h0);
+ green <= video_on ? ((pixel_x<=165 & pixel_x>=55 & pixel_y >=90 & pixel_y <=390) ||
+(pixel_x<=305 & pixel_x>=195 & pixel_y >=90 & pixel_y <=390)|| (pixel_x<=445 & pixel_x>=335 &
+pixel_y >=90 & pixel_y <=390) || 
+(pixel_x<=585 & pixel_x>=475 & pixel_y >=90 & pixel_y <=390)? 4'h0:4'hF):(4'h0);
 
- blue <= video_on ? ((pixel_x<=210 & pixel_x>=10 & pixel_y >=10 & pixel_y <=235) ||
-(pixel_x<=420 & pixel_x>=220 & pixel_y >=10 & pixel_y <=225)|| (pixel_x<=630 & pixel_x>=430 &
-pixel_y >=10 & pixel_y <=235) || (pixel_x<=210 & pixel_x>=10 & pixel_y >=245 & pixel_y <=470) ||
- (pixel_x<=420 & pixel_x>=220 & pixel_y >=245 & pixel_y <=470) || (pixel_x<=430 &
-pixel_x>=630 & pixel_y >=245 & pixel_y <=470)? 4'h0:4'hF):(4'h0);
+ blue <= video_on ? ((pixel_x<=165 & pixel_x>=55 & pixel_y >=90 & pixel_y <=390) ||
+(pixel_x<=305 & pixel_x>=195 & pixel_y >=90 & pixel_y <=390)|| (pixel_x<=445 & pixel_x>=335 &
+pixel_y >=90 & pixel_y <=390) || 
+(pixel_x<=585 & pixel_x>=475 & pixel_y >=90 & pixel_y <=390)? 4'h0:4'hF):(4'h0);
 // end
  end 
  
